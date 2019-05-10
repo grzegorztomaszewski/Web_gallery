@@ -13,3 +13,4 @@
 //  i po wybraniu jednego z tytułów tylko to zdjęcie ma zostać w galerii.
 // Przycisk edytuj na kartach zdjęć ma odblokowywać i blokować 
 // możliwość edycji tytułu i opisu danego zdjęcia
+
