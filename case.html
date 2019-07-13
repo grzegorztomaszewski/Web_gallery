@@ -1,23 +1,68 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <title>Web_gallery</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/lightbox.min.css">
 </head>
+<body id = "body"> 
+    <nav id = "navigation">
+        <p id = "gallery">Galeria</p>
+        <p id = "counterText"></p>
+        <button id = btReset>Reset</button> 
+        <select id = "selectListId" class = selectList>
+        </select>
+        <form name = "switchDark" id = "switchDark">
+            <label class="switch">
+                <input type="checkbox" name = checkboxDark>
+                <span class="slider round"></span>
+            </label>
+        </form>
+    </nav>
 
-<body>
-    <nav>
-        <h1 id="gallery">Galeria</h1>
-        <p id="count_photos">Licznik zdjęć: </p>
-    <nav>
-        <main>
-            <article id="main"></article>
-        </main>
-    <script src="case.js"></script>
+    <div id = "line"></div>
+
+    <section id = "generalBox" class = boxClass>
+         <section id = "box1" class = "box1">
+            <section id = "fotoBox" Class = "fotoBoxClass">
+                <!--<p id = "textOnFoto">320x200</p>-->
+                <a href="./img/photo1.jpg" data-lightbox="mygallery" data-title="Husky Syberyjski">
+                    <img class = imgClass id = "foto" src="./img/photo1.jpg" alt = "Sprawdź ścieżkę do zdjęcia w pliku HTML">
+                </a>
+            </section>
+                <h2 class = "fotoTextClass" id = "fotoText1"></h2>
+                <h4 class = "descriptionClass" id = "description1"></h4>
+            <section id = "buttons" class = "buttonsClass">
+                <Button id = "btEdit1" class = "btEditClass">Edytuj</Button>
+                <Button id = "btDelete1" class = "btDelClass">Usuń</Button>
+            </section>
+        </section>
+
+        <section id = "boxCreate">
+            <section id = "fotoCreate">
+                <img class = "imgClassCreate" id='imgCreate' alt = ""/>
+                <input type="file" name="file" id="btAddFotoCreateId" class="btAddFotoCreateClass" accept="image/*" onchange='openFile(event)' />
+                <label id="btAddFotoCreateLabel" for="btAddFotoCreateId">Dodaj zdjęcie</label>
+            </section>
+                <h2 class = "fotoTextClass" id = "fotoTextCreate"></h2>
+                <h4 class = "descriptionClass" id = "descriptionCreate"></h4>
+            <section class = "buttonsClass" id = "buttonsCreate">
+                <Button id = "btCancel" class = "btClass">Anuluj</Button>
+                <Button id = "btAdd" class = "btClass">Dodaj</Button>
+                <Button id = "btEditCreate" class = "btEditClass">Edytuj</Button>
+            </section>
+        </section>
+    </section>
+
+        <script src="data.json"></script>
+        <script type="text/javascript" src="./js/jquery-3.4.1.js"></script>
+        <script src="./js/case.js"></script>
+        <script src="./js/lightbox.js"></script>
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
-
 </html>
+

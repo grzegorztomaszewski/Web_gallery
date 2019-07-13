@@ -1,0 +1,271 @@
+#body {
+    background-color: white;
+}
+
+/*Navigation*/
+#navigation {
+display: inline-block;
+}
+
+#gallery{
+font-size: 28px;
+font-weight: bold; 
+display: inline-block;
+margin: 1px 300px 20px 5px;
+}
+
+#counterText{
+    display: inline-block;
+    font-size: 14px;
+}
+
+#btReset{
+    Color: White;
+    background-color:#0084ff;
+    border-radius: 4px;
+    border: 1px solid gray;
+    width: 70px;
+    height: 35px;
+    font-size: 13px;
+    margin: 0px 0px 0px 30px;
+    cursor: pointer;
+}
+
+.selectList{
+    position: relative;
+    margin: 0px 0px 0px 10px
+}
+#line{
+	border-top: 1px solid #969696;
+	opacity: 0.3;
+}
+/*general box*/
+#generalBox{
+    margin-left: 15%;
+}
+
+
+/*Slider*/
+#switchDark{
+    display: inline-block;
+    margin: 0px 0px 0px 10px;
+}
+.switch {
+position: relative;
+display: inline-block;
+width: 60px;
+height: 34px;
+}
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+-webkit-transition: .4s;
+transition: .4s;
+}
+.slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+input:checked + .slider {
+background-color: #2196F3;
+}
+input:focus + .slider {
+box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+.slider.round {
+border-radius: 34px;
+}
+.slider.round:before {
+border-radius: 50%;
+}
+/*End Slider*/
+
+/*Upper Nav*/
+
+/*Bellow foto boxes*/
+
+.box{
+    background-color: white; 
+        width:330px;
+        height: 350px;
+        border: 1px solid #d6d6d6;
+        border-radius: 4px;
+        margin: 1% 1% 1% 1%;
+        display: inline-block;
+}
+
+.box1{
+    background-color: white; 
+        width:330px;
+        height: 350px;
+        border: 1px solid #d6d6d6;
+        border-radius: 4px;
+        margin: 1% 1% 1% 1%;
+        display: inline-block;
+}
+
+/* #textOnFoto{
+    text-align: center;
+    color: #555d66;
+    font-size: 24px;
+    margin: 80px 0px 0px 0px;
+    opacity: 0.8;
+} */
+
+.fotoTextClass{
+    margin: 0%;
+    font-weight: bold; 
+    display: inline-block;
+    margin: 6px 0px 0px 14px;
+}
+
+.descriptionClass{
+    margin: 6px 0px 2px 14px;
+    display: flex;
+}
+/*Buttons box 1*/
+.buttonsClass{
+    display: inline-block;
+}
+
+.btEditClass{
+    Color: White;
+    border-radius: 4px;
+    border: 1px solid gray;
+    width: 70px;
+    height: 35px;
+    font-size: 13px;
+    cursor: pointer;
+    background-color:#0084ff;
+    margin: 32px 0px 0px 10px;
+}
+
+#btDelete{
+    Color: black;
+    background-color:White;
+    border: 1px solid gray;
+}
+
+/*
+Bellow Create Box
+*/
+
+#boxCreate{
+    background-color: white; 
+        width:330px;
+        height: 350px;
+        border: 1px solid #d6d6d6;
+        border-radius: 4px;
+        margin: 1% 1% 1% 1%;
+        display: inline-block;
+}
+
+#fotoCreate{
+    margin: 5px;
+    width:320px;
+    height: 200px;
+    background-color: #e2e1e1;
+}
+
+.imgClass{
+    margin: 5px;
+    width:320px;
+    height: 200px;
+    background-color: #e2e1e1;
+    display: inline-block;
+}
+
+.imgClass:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    
+}
+
+#imgCreate{
+    margin: 0px;
+    width:320px;
+    height: 200px;
+    position: absolute;
+}
+
+.btAddFotoCreateClass {        /*usuwa box przy dodawaniu pliku */
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+    z-index: -1;
+    display: inline-block;
+}
+
+.btAddFotoCreateClass + label {
+    background-color:#2ca7d8;
+    width: 80px;
+    height: 45px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    font-size: 17px;
+    text-align: center;
+    margin: 60px 0px 0px 110px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+}
+
+/*Buttons box Create*/
+.btClass{
+    Color: White;
+    border-radius: 4px;
+    border: 1px solid gray;
+    width: 70px;
+    height: 35px;
+    font-size: 13px;
+    margin: 32px 0px 0px 2px;
+    cursor: pointer;
+}
+
+.btDelClass{
+    Color: black;
+    border-radius: 4px;
+    border: 1px solid gray;
+    width: 70px;
+    height: 35px;
+    font-size: 13px;
+    cursor: pointer;
+    background-color:white;
+    margin: 32px 0px 0px 2px;
+}
+
+#btCancel{
+    background-color:#ff1d1d;
+    margin: 32px 0px 0px 10px;
+    border: 1px solid gray;
+}
+
+#btAdd{
+    Color: White;
+    background-color: #3d992a;
+    border: 1px solid gray;
+}

@@ -1,0 +1,14 @@
+{
+	"Photo0":
+	{
+		"id": "0",
+		"title": "Wpisz tytuł",
+		"description": "Wpisz opis"
+	},
+	"Photo1":
+	{
+		"id": "1",
+		"title": "Zdjęcie 1",
+		"description": "Husky Syberyjski"
+	}
+}
